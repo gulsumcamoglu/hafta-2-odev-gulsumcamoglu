@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CatController extends Controller
+class CartController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,11 +13,10 @@ class CatController extends Controller
      */
     public function index()
     {
-
         $data_ =[
-            'title' => 'Kategori Sayfası'
+            'title' => 'Cart Index Sayfası'
         ];
-        return view('admin.Cat.index',['data_' =>$data_]);
+        return view('admin.Cart.index',['data_' =>$data_]);
     }
 
     /**
@@ -60,11 +59,7 @@ class CatController extends Controller
      */
     public function edit()
     {
-
-        $data_ =[
-            'title' => ' Category Edit Sayfası'
-        ];
-        return view('admin.Cat.edit',['data_' =>$data_]);
+       
     }
 
     /**
